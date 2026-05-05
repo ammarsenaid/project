@@ -1,0 +1,2 @@
+import { PageHeader, StatCard, Card } from '@/components/ui/primitives';
+export default function Page(){return <div><PageHeader title='Admin Dashboard' subtitle='Content operations overview'/><div className='grid gap-4 md:grid-cols-4'><StatCard label='Certificates' value='10'/><StatCard label='Lessons' value='128'/><StatCard label='Flashcards' value='3,220'/><StatCard label='Questions' value='1,040'/></div><div className='mt-4 grid gap-4 md:grid-cols-2'><Card>Uploads placeholder</Card><Card>Recent admin activity placeholder</Card></div></div>}

@@ -1,0 +1,1 @@
+import { PageHeader, Card } from '@/components/ui/primitives'; export default async function Page({params}:{params:Promise<{slug:string}>}){const {slug}=await params; return <div><PageHeader title={`Learning Hub: ${slug}`} subtitle='Abschnitte, Lektionen, Fortschritt'/><Card>Continue learning card + path overview.</Card></div>}
