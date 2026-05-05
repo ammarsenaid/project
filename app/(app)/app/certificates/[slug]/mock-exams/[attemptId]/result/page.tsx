@@ -1,0 +1,1 @@
+import { PageHeader, Card } from '@/components/ui/primitives'; export default async function Page({params}:{params:Promise<{slug:string;attemptId:string}>}){const {slug,attemptId}=await params; return <div><PageHeader title='Exam Result' subtitle={`${slug} · Attempt ${attemptId}`}/><Card>Score breakdown and weak areas placeholder.</Card></div>}

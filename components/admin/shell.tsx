@@ -1,0 +1,3 @@
+import Link from 'next/link'; import { ReactNode } from 'react';
+const links=['/admin','/admin/certificates','/admin/sections','/admin/lessons','/admin/flashcards','/admin/questions','/admin/mock-exams','/admin/glossary','/admin/users','/admin/uploads','/admin/analytics'];
+export function AdminShell({children}:{children:ReactNode}){return <div className='min-h-screen md:grid md:grid-cols-[260px_1fr]'><aside className='border-r bg-slate-900 p-4 text-white'>{links.map(l=><Link key={l} href={l} className='block rounded p-2 hover:bg-slate-800'>{l}</Link>)}</aside><main className='p-6'>{children}</main></div>}
