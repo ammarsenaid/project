@@ -1,0 +1,3 @@
+import Link from 'next/link'; import { ReactNode } from 'react';
+const links=['/app/dashboard','/app/certificates','/app/profile','/app/settings'];
+export function AppShell({children}:{children:ReactNode}){return <div className='min-h-screen lg:grid lg:grid-cols-[240px_1fr]'><aside className='hidden lg:block border-r p-4'>{links.map(l=><Link key={l} href={l} className='block rounded p-2 hover:bg-slate-100'>{l}</Link>)}</aside><div className='p-4'>{children}</div><nav className='fixed bottom-0 left-0 right-0 flex justify-around border-t bg-white p-2 lg:hidden'>{links.map(l=><Link key={l} href={l} className='text-xs'>{l.split('/').pop()}</Link>)}</nav></div>}

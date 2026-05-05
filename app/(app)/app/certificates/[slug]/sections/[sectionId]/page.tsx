@@ -1,0 +1,1 @@
+import { PageHeader, Card } from '@/components/ui/primitives'; export default async function Page({params}:{params:Promise<{slug:string;sectionId:string}>}){const {slug,sectionId}=await params; return <div><PageHeader title={`Section ${sectionId}`} subtitle={slug}/><Card>Section learning path + lessons list.</Card></div>}

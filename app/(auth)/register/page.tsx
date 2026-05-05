@@ -1,0 +1,2 @@
+import { Card, PageHeader, Button } from '@/components/ui/primitives';
+export default function Page(){return <div className='w-full max-w-md'><PageHeader title='Register' subtitle='Auth placeholder'/><Card className='space-y-3'><input className='w-full rounded-lg border p-2' placeholder='E-Mail'/><input className='w-full rounded-lg border p-2' placeholder='Passwort'/><Button>Register</Button></Card></div>}
